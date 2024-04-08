@@ -6,10 +6,95 @@
 
 :root {
   --shoes-background-color: #f3f7ff;
-  --jordanbg-text-color: #ffffff;
+  --jordanbg-text-color: #fffffffd;
   --main-text-color: #121214;
-  --tenis-air-jordan-color: #7CA2F4;
+  --tenis-air-jordan-color: #7ca2f4;
 
   --main-font-family: "Archivo", sans-serif;
   --secondary-font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+  color: var(--main-text-color);
+}
+
+/* alterações padrões do cabeçalho */
+header {
+  margin-top: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header .frete {
+  font-family: var(--main-font-family);
+  font-weight: 500;
+  font-size: 15px;
+
+  margin-bottom: 10px;
+}
+
+/* Anuncio da Marca */
+header .jordan {
+  width: 100vw;
+  height: 40vh;
+
+  background: url("./assets/jordan.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  color: var(--jordanbg-text-color);
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* definindo o espaço utilizado pelo texto */
+header .jordan > section {
+  margin: 0 auto;
+  width: 70vw;
+}
+
+header .jordan section .logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  font-family: var(--font-family1);
+  font-weight: 500;
+  font-size: 15px;
+}
+
+header section .logo img {
+  width: 35px;
+}
+
+header section .merchandising {
+  width: 70%;
+
+  margin-top: 8px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  font-family: var(--font-family1);
+}
+
+.merchandising h3 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.merchandising p {
+  width: 60%;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
 }
