@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --shoes-background-color: #f3f7ff;
+  --jordanbg-text-color: #ffffff;
+  --main-text-color: #121214;
+  --tenis-air-jordan-color: #7CA2F4;
+
+  --main-font-family: "Archivo", sans-serif;
+  --secondary-font-family: "Space Grotesk", sans-serif;
+}
