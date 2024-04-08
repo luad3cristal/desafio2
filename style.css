@@ -14,8 +14,14 @@
   --secondary-font-family: "Space Grotesk", sans-serif;
 }
 
+.container {
+  width: 60vw;
+  margin: 0 auto;
+}
+
 body {
   color: var(--main-text-color);
+  overflow-x: hidden;
 }
 
 /* alterações padrões do cabeçalho */
@@ -57,7 +63,7 @@ header .jordan {
 /* definindo o espaço utilizado pelo texto */
 header .jordan > section {
   margin: 0 auto;
-  width: 70vw;
+  width: 60vw;
 }
 
 header .jordan section .logo {
@@ -65,7 +71,7 @@ header .jordan section .logo {
   align-items: center;
   gap: 5px;
 
-  font-family: var(--font-family1);
+  font-family: var(--main-font-family);
   font-weight: 500;
   font-size: 15px;
 }
@@ -77,13 +83,13 @@ header section .logo img {
 header section .merchandising {
   width: 70%;
 
-  margin-top: 8px;
+  margin-top: 20px;
 
   display: flex;
   flex-direction: column;
   gap: 8px;
 
-  font-family: var(--font-family1);
+  font-family: var(--main-font-family);
 }
 
 .merchandising h3 {
@@ -97,4 +103,89 @@ header section .merchandising {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.4;
+}
+
+/* adicionando os cards dos sapatos */
+main {
+  margin: 30px 0;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+main .announcement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  gap: 4px;
+
+  margin: 10px 0;
+  width: 80%;
+}
+
+main .announcement h3 {
+  font-family: var(--main-font-family);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+main .announcement p {
+  font-family: Archivo;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.3;
+}
+
+main .cards {
+  width: fit-content;
+  height: fit-content;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 6px;
+  margin-bottom: 20px;
+
+  width: 285px;
+  height: 220px;
+}
+
+main .cards img {
+  background-color: var(--shoes-background-color);
+  width: 100%;
+}
+
+main .cards h5 {
+  font-family: var(--main-font-family);
+  font-size: 14px;
+  font-weight: 500;
+
+  margin-top: 5px;
+  margin-left: 2px;
+}
+
+main .cards p {
+  font-family: var(--main-font-family);
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--tenis-air-jordan-color);
+
+  margin-left: 2px;
+}
+
+main .cards span {
+  font-family: var(--secondary-font-family);
+  font-size: 14px;
+  font-weight: 500;
+
+  margin-left: 2px;
 }
