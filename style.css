@@ -92,9 +92,9 @@ header section .merchandising {
   font-family: var(--main-font-family);
 }
 
-.merchandising h3 {
+.merchandising h2 {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 23px;
 }
 
 .merchandising p {
@@ -105,7 +105,7 @@ header section .merchandising {
   line-height: 1.4;
 }
 
-/* adicionando os cards dos sapatos */
+/* adicionando o conteudo principal */
 main {
   margin: 30px 0;
 
@@ -137,7 +137,7 @@ main .announcement h3 {
 }
 
 main .announcement p {
-  font-family: Archivo;
+  font-family: var(--main-font-family);
   font-size: 17px;
   font-weight: 400;
   text-align: center;
@@ -145,9 +145,6 @@ main .announcement p {
 }
 
 main .cards {
-  width: fit-content;
-  height: fit-content;
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -188,4 +185,69 @@ main .cards span {
   font-weight: 500;
 
   margin-left: 2px;
+}
+
+/* adicionando a resposividade no tablet */
+@media (max-width: 769px) {
+  .container {
+    width: 90vw;
+  }
+
+  header .jordan {
+    height: 45vh;
+  }
+
+  header .jordan > section {
+    margin: 0 auto;
+    width: 75vw;
+  }
+
+  header section .merchandising {
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 580px) {
+  header .jordan {
+    width: 100vw;
+
+    background: url("./assets/jordan-mobile.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 40%;
+  }
+}
+
+@media (max-width: 376px) {
+  header .jordan section .logo {
+    font-size: 14px;
+  }
+  header section .logo img {
+    width: 32px;
+  }
+
+  .merchandising h2 {
+    font-size: 20px;
+  }
+
+  .merchandising p {
+    width: 100%;
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  main .announcement h3 {
+    font-size: 19px;
+    text-align: center;
+  }
+
+  main .announcement p {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+
+  main .cards {
+    
+  }
 }
